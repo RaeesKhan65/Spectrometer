@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="neonSpectrum">
+    <file>spectrum_pic.jpg</file>
+  </qresource>
+</RCC>
