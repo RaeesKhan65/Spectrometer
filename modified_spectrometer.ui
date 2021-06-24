@@ -231,7 +231,7 @@
           <item>
            <widget class="QLineEdit" name="path_name">
             <property name="text">
-             <string>H:\Entanglement Experiments\Data\Spectrum</string>
+             <string>C:\Users\duttlab6b\Desktop\SpectrometerData</string>
             </property>
            </widget>
           </item>

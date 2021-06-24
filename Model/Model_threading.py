@@ -30,7 +30,7 @@ class Stepper(object):
             print("usable visas: ", self.workable_visas)
 
             #self.my_visa = self.workable_visas[-1]
-            self.my_visa = "ASRL8::INSTR"
+            self.my_visa = "ASRL3::INSTR"
             # ^assume the first one is correct
 
 
@@ -109,6 +109,7 @@ class AndorIdus(object):
         self.true_path = ""  # ugly
         self.set_aquisition_mode = ""
         self.acquisition_mode = 'Image'  # FVB or Image
+
 
         self.current_output = ""  # stderr ouput
         self._currently_taking_data = False

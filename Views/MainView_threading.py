@@ -66,7 +66,7 @@ class MainView(QtWidgets.QMainWindow, Ui_MainWindow):
         self.should_i_plot = False
         super(MainView, self).__init__()
         self.setupUi(self)
-        self.data_path = "H:\Entanglement Experiments\Data\Spectrum"
+        self.data_path = r"C:\Users\duttlab6b\Desktop\SpectrometerData"
         self.calibration_spectrum_file = \
             self.calibration_spectrum_path.text()
         self.background_file = None
@@ -860,7 +860,7 @@ class MainView(QtWidgets.QMainWindow, Ui_MainWindow):
         add: if True, multiple plots are overlaid.
         """
         self.display_path.setText(
-            QtWidgets.QFileDialog.getOpenFileName())
+            QtWidgets.QFileDialog.getOpenFileName()[0])
         if os.path.isfile(str(self.display_path.text())):
             self.display_file = self.display_path.text()
             self.update_model()
